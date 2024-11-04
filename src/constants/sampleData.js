@@ -24,7 +24,7 @@ export const sampleUsers = [
   },
   {
     avatar: "https://www.w3schools.com/howto/img_avatar.png",
-    name: "John Boi",
+    name: "John ",
     _id: "2",
   },
 ];
@@ -49,7 +49,7 @@ export const sampleNotifications = [
 export const sampleMessage = [
   {
     attachments: [],
-    content: "L*uda ka Message hai",
+    content: "",
     _id: "sfnsdjkfsdnfkjsbnd",
     sender: {
       _id: "user._id",
@@ -62,7 +62,7 @@ export const sampleMessage = [
   {
     attachments: [
       {
-        public_id: "asdsad 2",
+        public_id: "2",
         url: "https://www.w3schools.com/howto/img_avatar.png",
       },
     ],
@@ -88,7 +88,7 @@ export const dashboardData = {
       groups: 5,
     },
     {
-      name: "John Boi",
+      name: "John ",
       avatar: "https://www.w3schools.com/howto/img_avatar.png",
       _id: "2",
       username: "john_boi",
@@ -99,7 +99,7 @@ export const dashboardData = {
 
   chats: [
     {
-      name: "LabadBass Group",
+      name: " Group",
       avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
       _id: "1",
       groupChat: false,
@@ -115,7 +115,7 @@ export const dashboardData = {
       },
     },
     {
-      name: "L*Da Luston Group",
+      name: "roup",
       avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
       _id: "2",
       groupChat: true,
@@ -135,11 +135,11 @@ export const dashboardData = {
   messages: [
     {
       attachments: [],
-      content: "L*uda ka Message hai",
+      content: "Message ",
       _id: "sfnsdjkfsdnfkjsbnd",
       sender: {
         avatar: "https://www.w3schools.com/howto/img_avatar.png",
-        name: "Chaman ",
+        name: "man ",
       },
       chat: "chatId",
       groupChat: false,
@@ -149,7 +149,7 @@ export const dashboardData = {
     {
       attachments: [
         {
-          public_id: "asdsad 2",
+          public_id: " 2",
           url: "https://www.w3schools.com/howto/img_avatar.png",
         },
       ],
@@ -157,7 +157,7 @@ export const dashboardData = {
       _id: "sfnsdjkfsdnfkdddjsbnd",
       sender: {
         avatar: "https://www.w3schools.com/howto/img_avatar.png",
-        name: "Chaman  2",
+        name: "",
       },
       chat: "chatId",
       groupChat: true,

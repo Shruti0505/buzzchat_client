@@ -113,7 +113,7 @@ const Login = () => {
   return (
     <div
       style={{
-        backgroundImage: bgGradient,
+        backgroundColor: "#1A1F36",
       }}
     >
       <Container

@@ -1,5 +1,5 @@
 import React from "react";
-import { transformImage } from "../../lib/features";
+import { transformImage } from "../../lib/features.js";
 import { FileOpen as FileOpenIcon } from "@mui/icons-material";
 
 const RenderAttachment = (file, url) => {

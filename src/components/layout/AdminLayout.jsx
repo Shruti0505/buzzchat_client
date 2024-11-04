@@ -21,6 +21,7 @@ import { Link as LinkComponent, Navigate, useLocation } from "react-router-dom";
 import { grayColor, matBlack } from "../../constants/color";
 import { useDispatch, useSelector } from "react-redux";
 import { adminLogout } from "../../redux/thunks/admin";
+import logo from "../../assets/logo-chat.jpeg"
 
 const Link = styled(LinkComponent)`
   text-decoration: none;
@@ -48,11 +49,11 @@ const adminTabs = [
     path: "/admin/chats",
     icon: <GroupsIcon />,
   },
-  {
-    name: "Messages",
-    path: "/admin/messages",
-    icon: <MessageIcon />,
-  },
+  // {
+  //   name: "Messages",
+  //   path: "/admin/messages",
+  //   icon: <MessageIcon />,
+  // },
 ];
 
 const Sidebar = ({ w = "100%" }) => {
@@ -65,8 +66,9 @@ const Sidebar = ({ w = "100%" }) => {
 
   return (
     <Stack width={w} direction={"column"} p={"3rem"} spacing={"3rem"}>
-      <Typography variant="h5" textTransform={"uppercase"}>
-        Chattu
+      <Typography variant="h5" >
+        BuzzChat
+        {/* <img src={logo} alt="logo" style={{ height: "100px" }}/> */}
       </Typography>
 
       <Stack spacing={"1rem"}>

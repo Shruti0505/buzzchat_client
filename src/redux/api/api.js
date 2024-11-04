@@ -1,15 +1,16 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { server } from "../../constants/config";
+import { server } from "../../constants/config.js";
 
 const api = createApi({
   reducerPath: "api",
-  baseQuery: fetchBaseQuery({ baseUrl: `${server}/api/v1/` }),
+  baseQuery: fetchBaseQuery({ baseUrl: `${server}/api/v1/`, credentials: "include" ,}),
   tagTypes: ["Chat", "User", "Message"],
 
   endpoints: (builder) => ({
     myChats: builder.query({
       query: () => ({
         url: "chat/my",
+        method: "POST", //added extra changed
         credentials: "include",
       }),
       providesTags: ["Chat"],

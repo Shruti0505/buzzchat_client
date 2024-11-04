@@ -2,8 +2,8 @@ import { Box, Typography } from "@mui/material";
 import React, { memo } from "react";
 import { lightBlue } from "../../constants/color";
 import moment from "moment";
-import { fileFormat } from "../../lib/features";
-import RenderAttachment from "./RenderAttachment";
+import { fileFormat } from "../../lib/features.js";
+import RenderAttachment from "./RenderAttachment.jsx";
 import { motion } from "framer-motion";
 
 const MessageComponent = ({ message, user }) => {

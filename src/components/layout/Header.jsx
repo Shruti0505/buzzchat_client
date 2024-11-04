@@ -32,6 +32,9 @@ import {
 } from "../../redux/reducers/misc";
 import { resetNotificationCount } from "../../redux/reducers/chat";
 
+// Import the image
+import logo from "../../assets/logo-chat.jpeg"; // Adjust the path to your image
+
 const SearchDialog = lazy(() => import("../specific/Search"));
 const NotifcationDialog = lazy(() => import("../specific/Notifications"));
 const NewGroupDialog = lazy(() => import("../specific/NewGroup"));
@@ -82,14 +85,15 @@ const Header = () => {
           }}
         >
           <Toolbar>
-            <Typography
-              variant="h6"
+            <Box
+              component="img"
+              src={logo}
+              alt="Logo"
               sx={{
                 display: { xs: "none", sm: "block" },
+                height: "3rem", // Adjust the height as needed
               }}
-            >
-              Chattu
-            </Typography>
+            />
 
             <Box
               sx={{

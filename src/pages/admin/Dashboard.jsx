@@ -81,7 +81,7 @@ const Dashboard = () => {
       margin={"2rem 0"}
     >
       <Widget title={"Users"} value={stats?.usersCount} Icon={<PersonIcon />} />
-      <Widget
+      {/* <Widget
         title={"Chats"}
         value={stats?.totalChatsCount}
         Icon={<GroupIcon />}
@@ -90,7 +90,7 @@ const Dashboard = () => {
         title={"Messages"}
         value={stats?.messagesCount}
         Icon={<MessageIcon />}
-      />
+      /> */}
     </Stack>
   );
 

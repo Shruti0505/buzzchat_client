@@ -219,7 +219,7 @@ const Groups = () => {
         </>
       ) : (
         <>
-          <Typography variant="h4">{groupName}</Typography>
+          <Typography variant="h4" >{groupName}</Typography>
           <IconButton
             disabled={isLoadingGroupName}
             onClick={() => setIsEdit(true)}
@@ -395,7 +395,7 @@ const GroupsList = ({ w = "100%", myGroups = [], chatId }) => (
         <GroupListItem group={group} chatId={chatId} key={group._id} />
       ))
     ) : (
-      <Typography textAlign={"center"} padding="1rem">
+      <Typography textAlign={"center"} padding="1rem" style={{color:"white"}}>
         No groups
       </Typography>
     )}
@@ -414,7 +414,7 @@ const GroupListItem = memo(({ group, chatId }) => {
     >
       <Stack direction={"row"} spacing={"1rem"} alignItems={"center"}>
         <AvatarCard avatar={avatar} />
-        <Typography>{name}</Typography>
+        <Typography style={{color:"white"}}>{name}</Typography>
       </Stack>
     </Link>
   );
